@@ -20,7 +20,7 @@ function event(thread_id)
    for n=1,1000 do
 
       -- assign a random machine id to the row
-      mach_id = sb_rand(1,1000);
+      mach_id = n
 
       row = "" .. init_ts
       max_row = row

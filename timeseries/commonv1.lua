@@ -20,7 +20,6 @@ function create_insert(table_id)
       query = [[
 CREATE TABLE `sensordata` (
   `ts` int(10) unsigned NOT NULL DEFAULT '0',
-  `site_id` int(10) unsigned NOT NULL,
   `sensor_id` int(10) unsigned NOT NULL,
   `data1` double NOT NULL,
   `data2` double NOT NULL,
@@ -28,7 +27,7 @@ CREATE TABLE `sensordata` (
   `data4` double NOT NULL,
   `data5` double NOT NULL,
   `cnt` int(10) unsigned NOT NULL,
-  PRIMARY KEY (`site_id`,`sensor_id`,`ts`)
+  PRIMARY KEY (`sensor_id`,`ts`)
 ) /*! ENGINE = ]] .. mysql_table_engine ..
 " ROW_FORMAT = " .. mysql_row_format .. " */"
 

@@ -76,6 +76,7 @@ function set_vars()
    oltp_tables_count = oltp_tables_count or 1
    sensors_per_thread = sensors_per_thread or 1000
    mysql_row_format = mysql_row_format or 'DEFAULT'
+   start_ts = start_ts or 1300000000
 
    oltp_table_size = oltp_table_size or 10000
    oltp_range_size = oltp_range_size or 100
